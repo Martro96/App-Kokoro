@@ -1,0 +1,47 @@
+<div class="products-container" *ngIf="coffee; else notFound">
+  <div
+    class="coffee-detail"
+    [ngClass]="{'on-sale': coffee.available, 'out-of-stock': !coffee.available}"
+  >
+  
+   <!-- Imagen del café -->
+   <div class="coffee-img">
+    <img
+  [src]="coffee.imageUrl | defaultImage"
+  alt="{{ coffee.name }}"
+  class="coffee-img"
+/>
+
+  </div>
+    <!-- Nombre -->
+    <h3>{{ coffee.name }}</h3>
+
+    <!-- Descripción -->
+    <div class="coffee-notes">
+      <span>{{ coffee.notes }}</span>
+    </div>
+
+    <!-- Origen -->
+    <div class="origin">
+      <p>Origen: {{ coffee.origin }}</p>
+    </div>
+
+    <!-- Botones -->
+    <div class="botones-cantidad">
+      <button (click)="decreaseQuantity()" [disabled]="quantity <= 1">-</button>
+      <span>{{ quantity }}</span>
+      <button (click)="increaseQuantity()">+</button>
+    </div>
+    <div class="btn-add">
+      <button (click)="addToCart()" [disabled]="!coffee.available">Añadir a la cesta</button>
+    </div>
+  </div>
+</div>
+
+<ng-template #notFound>
+  <div class="not-found">
+    <p>Café no encontrado 🫤</p>
+    <a routerLink="/products" class="cta-btn">Volver a productos</a>
+  </div>
+</ng-template>
+<app-footer></app-footer>

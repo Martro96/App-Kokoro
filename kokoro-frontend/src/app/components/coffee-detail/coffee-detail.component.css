@@ -1,0 +1,90 @@
+  * {
+    background-color: #E5DFA1;
+  }
+
+
+.products-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #E5DFA1;
+}
+
+.coffee-detail {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.coffee-img img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  
+}
+h3, span, p, .btn-add, .coffee-img {
+  background-color: #fff;
+}
+
+h3 {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  color: #000;
+}
+
+
+.origin,
+.coffee-notes {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  color: #333;
+  background-color: #fff;
+}
+
+.botones-cantidad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  background-color: #fff;
+}
+
+.botones-cantidad button {
+  background-color: #000;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+ 
+}
+
+.btn-add button {
+  background-color: #fdb226;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.btn-add button:hover {
+  background-color: #e09e1b;
+}
+
+/*NOT FOUND*/
+.not-found {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.2rem;
+  color: #000;
+}

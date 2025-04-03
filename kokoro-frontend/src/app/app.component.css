@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Satoshi-Variable';
+    src: url('/fonts/Satoshi_Complete/Fonts/TTF/Satoshi-Variable.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+* {
+    /* background-color: #E5DFA1; */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Satoshi-Variable';
+}

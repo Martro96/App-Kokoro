@@ -1,0 +1,57 @@
+nav {
+    background-color: transparent;
+    width: 100%;
+    height: 4rem;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+  }
+  
+  /* Links a la izquierda */
+  .nav-links {
+    display: flex;
+    gap: 40px;
+  }
+  
+  /* Ítems del nav */
+  .nav-item {
+    list-style: none;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  .active .nav-link {
+    border-bottom: 2px solid white;
+  }
+  
+  /* Carrito a la derecha */
+  .carrito-icon {
+    position: relative;
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+
+  }
+  
+  .cart-badge {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    background-color: #fdb226;
+    color: black;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+  }

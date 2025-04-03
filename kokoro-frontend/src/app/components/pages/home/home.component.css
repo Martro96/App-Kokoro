@@ -1,0 +1,101 @@
+/* Reset general */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+  
+  /* ESTRUCTURA GENERAL DE SECCIONES PARRALAX */
+  .parallax-section {
+    height: 100vh; /*Ocupamos todo el alto de la ventana*/
+    background-attachment: fixed; /*Fijamos la imagen al fondo para que no se mueva*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; /*Posicion relativa para que en el after se pueda modificar*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    border-bottom-left-radius: 50% 10%;
+    border-bottom-right-radius: 50% 10%;
+    background-color: black;
+
+  }
+  
+  .parallax-section::after {
+    content: '';
+    position: absolute; /*Cubrimos todo el contenido*/
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4); /*Capa oscurecedora*/
+  }
+  
+  .parallax-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  }
+  
+  .parallax-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .parallax-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* FONDOS ESPECÍFICOS PARA CADA SECCIÓN */
+  .parallax-caja {
+    background-image: url('/assets/images/caja.jpg');
+  }
+  
+  .parallax-paquetes {
+    background-image: url('/assets/images/paquetes.jpg');
+  }
+  
+  .parallax-cartel {
+    background-image: url('/assets/images/cartel.jpg');
+  }
+  
+  /* BANDA NEGRA DE INFO */
+  .kokoro-info {
+    background-color: black;
+    color: whitesmoke;
+    padding: 3rem 1rem;
+  }
+  
+  .kokoro-info .texto {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .kokoro-info p {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  /* BOTÓN DE CTA */
+  .cta-btn {
+    margin-top: 1.5rem;
+    background-color: #000;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+  }
+  
+  .cta-btn:hover {
+    background-color: #333;
+  }
+  

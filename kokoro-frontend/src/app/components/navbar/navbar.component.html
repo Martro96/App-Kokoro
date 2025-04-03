@@ -1,0 +1,19 @@
+<nav>
+  <li class="nav-item" routerLinkActive="active">
+    <a class="nav-link" routerLink="/home">Home</a>
+  </li>
+  <li class="nav-item" routerLinkActive="active">
+    <a class="nav-link" routerLink="/about">About</a>
+  </li>
+  <li class="nav-item" routerLinkActive="active">
+    <a class="nav-link" routerLink="/products">Products</a>
+  </li>
+  <!-- Icono carrito -->
+  <div class="carrito">
+    <a routerLink="/cart" class="carrito-icon"
+      >🛒
+      <span class="cart-badge" *ngIf="totalItems > 0">{{ totalItems }}</span>
+    </a>
+  </div>
+
+</nav>

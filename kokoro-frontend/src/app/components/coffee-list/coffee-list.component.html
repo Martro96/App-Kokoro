@@ -1,0 +1,10 @@
+<h2>Nuestros productos</h2>
+<p> Nuestra colección de cafés de especialidad está seleccionada cuidadosamente para acercarte aromas, sabores y orígenes únicos de todo el mundo. 
+</p>
+<div class="products-container">
+    <app-coffee-card
+    *ngFor="let coffee of coffees$ | async; trackBy: trackById"
+    [coffee]="coffee"
+    >
+    </app-coffee-card>
+</div>

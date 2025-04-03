@@ -1,0 +1,47 @@
+<article 
+  class="product-container"
+>
+  <!-- ITEM, estilo según disponibilidad -->
+  <div
+    class="coffee-item"
+    [ngClass]="{
+      'on-sale': coffee.available,
+      'out-of-stock': !coffee.available
+    }"
+  >
+    <!-- Nombre del café -->
+    <div class="title">
+      <h3 class="coffee-name">{{ coffee.name }}</h3>
+    </div>
+    <!-- Imagen del café -->
+    <div class="coffee-img">
+      <img
+        [src]="coffee.imageUrl | defaultImage"
+        alt="{{ coffee.name }}"
+        class="coffee-img"
+        (error)="coffee.imageUrl = 'kokoro-frontend/public/assets'"
+
+      />
+    </div>
+
+    <!-- Precio -->
+    <div class="price">
+      <p>Precio: {{ coffee.price }}€</p>
+    </div>
+    <!-- Notas -->
+    <div class="notes">
+      <p class="coffee-notes">{{ coffee.notes }}</p>
+    </div>
+
+    <!-- Botón -->
+    <button 
+    [ngClass]="{
+      'on-sale': coffee.available,
+      'out-of-stock': !coffee.available
+    }"
+    class="cta-btn"
+    [routerLink]="['/product', coffee.id]">
+    Más información</button>
+
+  </div>
+</article>

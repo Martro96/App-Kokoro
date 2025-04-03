@@ -1,0 +1,22 @@
+<div class="pagina-cart" *ngIf="cart.length > 0; else emptyCart">
+  <h2>Tu carrito</h2>
+  <div class="items-cart" *ngFor="let item of cart">
+    <p>{{ item.name }} x {{ item.quantity }}</p>
+    <p *ngIf="item.quantity !== undefined">
+        {{ item.price * item.quantity | currency: 'EUR' }}
+      </p>
+    <button (click)="removeItem(item.id)">Eliminar</button>
+
+  </div>
+
+  <hr />
+  <p>Total: {{ getTotal() | currency : "EUR" }}</p>
+</div>
+
+<ng-template #emptyCart>
+    <div class="empty-cart-message">
+      <p>Tu carrito está vacío.</p>
+      <a routerLink="/products" class="cta-btn">Volver a productos</a>
+    </div>
+  </ng-template>
+<app-footer></app-footer>
