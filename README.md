@@ -37,7 +37,7 @@ Prueba-tecnica-AirFi/
 
 ```bash
 git clone https://github.com/Martro96/App-Kokoro.git
-cd Prueba-tecnica-AirFi
+cd App-Kokoro
 ```
 
 ### Ejecutar los contenedores
@@ -76,7 +76,7 @@ docker-compose down --volumes --remove-orphans
 
 ## Autoría
 
-Proyecto desarrollado por [Martro96](https://github.com/Martro96) 
+Proyecto desarrollado por [Martro96](https://github.com/Martro96) tomando imágenes y recursos del template del diseño corporativo de Kokoro Café: [Figma Community](https://www.figma.com/design/pA2dkJj3Zt43rlmwb55BnT/Kokoro-Branding-%7C-Brand-Identity-%7C-Coffee-Shop--Community-?node-id=7-11)
 
 
 
