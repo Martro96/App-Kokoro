@@ -1,4 +1,4 @@
-# Prueba Técnica - AirFi  y "Kokoro"
+# App Kokoro
 
 Este proyecto consiste en una aplicación web full-stack que muestra un catálogo de cafés del mundo. Fue desarrollada como parte de una prueba técnica para la empresa AirFi.
 
