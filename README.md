@@ -36,7 +36,7 @@ Prueba-tecnica-AirFi/
 - Clonar este repositorio:
 
 ```bash
-git clone https://github.com/Martro96/Prueba-tecnica-AirFi.git
+git clone https://github.com/Martro96/App-Kokoro.git
 cd Prueba-tecnica-AirFi
 ```
 
@@ -76,7 +76,7 @@ docker-compose down --volumes --remove-orphans
 
 ## Autoría
 
-Proyecto desarrollado por [Martro96](https://github.com/Martro96) como parte del proceso de selección de AirFi 
+Proyecto desarrollado por [Martro96](https://github.com/Martro96) 
 
 
 
